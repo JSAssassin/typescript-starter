@@ -1,0 +1,25 @@
+{
+  "name": "typescript-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "rimraf ./build && tsc",
+    "start:dev": "npx nodemon",
+    "start": "npm run build && node build/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@digitalbazaar/vc": "^6.0.1",
+    "@types/node": "^18.15.3",
+    "typescript": "^5.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.21",
+    "rimraf": "^4.4.0",
+    "ts-node": "^10.9.1"
+  }
+}
